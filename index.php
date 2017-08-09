@@ -50,7 +50,7 @@ if (! function_exists('mix')) {
             $manifestDirectory = "/{$manifestDirectory}";
         }
 
-        $rootDir = dirname(dirname(ABSPATH));
+        $rootDir = get_template_directory();
 
         if (file_exists($rootDir . '/' . $manifestDirectory.'/hot')) {
             return "http://localhost:8080" . $path;
