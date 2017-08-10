@@ -76,6 +76,6 @@ if (! function_exists('mix')) {
         $path = $manifestDirectory . $manifest[$path];
         $path = str_replace('/web', '', $path);
         $path = str_replace('//', '/', $path);
-        return WP_HOME . $path;
+        return get_template_directory_uri() . $path;
     }
 }
